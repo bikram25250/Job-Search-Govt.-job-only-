@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Navbar with Sidebar Icons</title>
+<link rel="stylesheet" href="style.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="navbar-left">
+<img src="C:\Users\user\OneDrive\Pictures\Job Website images\job-search-logo.webp" alt="Logo">
+<span class="site-name">Job Search</span>
+</div>
+
+<div class="nav-links">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Services</a>
+  <a href="#">Portfolio</a>
+  <a href="#">Contact</a>
+</div>
+
+<!-- Hamburger -->
+<button class="menu-btn" id="menu-btn" onclick="openSidebar()">&#9776;</button>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+<button class="close-btn" onclick="closeSidebar()">✖</button>
+<a href="#"><i class="fas fa-home"></i> Home</a>
+<a href="#"><i class="fas fa-info-circle"></i> About</a>
+<a href="#"><i class="fas fa-briefcase"></i> Services</a>
+<a href="#"><i class="fas fa-image"></i> Portfolio</a>
+<a href="#"><i class="fas fa-envelope"></i> Contact</a>
+</div>
+
+<!-- Content (after navbar) -->
+<div class="content">
+<h1>All latest government jobs available here</h1>
+<p>
+<u><b> Qualification </b></u>  
+<p>10th pass | 12th pass | ITI | Diploma | Graduate | Under Graduate</p>
+</p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
+

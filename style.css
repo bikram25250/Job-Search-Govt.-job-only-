@@ -1,0 +1,168 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f7f9fc;
+  min-height: 100vh;
+}
+
+/* ---------- TOP NAVBAR ---------- */
+.navbar {
+  background: linear-gradient(90deg, #004aad, #007bff);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 25px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1002;
+}
+
+/* Left section: Logo + Site name */
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-left img {
+  width: 40px;
+  height: 40px;
+  border-radius: 6px;
+  margin-right: 10px;
+}
+
+.site-name {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+/* Right section: Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 17px;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #ffda79;
+}
+
+/* ---------- HAMBURGER BUTTON ---------- */
+.menu-btn {
+  font-size: 28px;
+  cursor: pointer;
+  color: #fff;
+  background: none;
+  border: none;
+  display: none;
+}
+
+/* ---------- SIDEBAR ---------- */
+.sidebar {
+  width: 270px;
+  background: linear-gradient(180deg, #004aad, #0066cc);
+  color: white;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100%;
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 1003;
+  padding-top: 80px;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar.active {
+  transform: translateX(0);
+}
+
+.sidebar a {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+  font-size: 18px;
+}
+
+.sidebar a i {
+  margin-right: 15px;
+  width: 20px; /* fixed width for alignment */
+  text-align: center;
+}
+
+.sidebar a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Close button inside sidebar */
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 25px;
+  font-size: 26px;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* ---------- OVERLAY (background behind sidebar) ---------- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 1001;
+}
+
+.overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ---------- CONTENT ---------- */
+.content {
+  padding: 120px 20px;
+  text-align: center;
+  border: 1px solid black;
+}
+.content p{
+  font-size: 20px;
+  color: rgb(177, 68, 68);
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
