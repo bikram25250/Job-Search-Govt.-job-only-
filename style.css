@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: #eaf2fb; /* professional light blue background */
+  background-color: #eaf2fb;
   min-height: 100vh;
   color: #222;
 }
@@ -143,7 +143,7 @@ body {
   visibility: visible;
 }
 
-/* ---------- CONTENT SECTION (Indian Flag Background, Fixed for Mobile) ---------- */
+/* ---------- CONTENT SECTION (Indian Flag Background, Mobile Safe) ---------- */
 .content {
   margin-top: 70px;
   width: 100%;
@@ -151,17 +151,17 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url("https://cdn.vectorstock.com/i/1000v/83/58/flag-of-india-made-in-tricolor-texture-and-wheel-vector-4598358.jpg");
   background-position: center center;
-  background-size: 100% 100%; /* fills without outline */
+  background-size: cover; /* ensures natural scaling */
   background-repeat: no-repeat;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px 20px;
+  padding: 50px 20px 60px; /* extra bottom padding for safe zone */
   color: #fff;
-  overflow: hidden; /* hides any border line */
+  overflow: hidden;
+  border: none;
 }
 
 .content h1 {
@@ -191,9 +191,10 @@ body {
 
   .content {
     min-height: 55vh;
-    padding: 70px 15px;
-    background-attachment: scroll; /* fixes mobile rendering issue */
-    background-size: cover; /* smoother fit for smaller screens */
+    padding: 70px 15px 80px; /* safe padding to prevent line visibility */
+    background-size: cover; /* always scales correctly */
+    background-position: center top;
+    background-attachment: scroll;
   }
 
   .content h1 {
