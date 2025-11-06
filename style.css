@@ -143,25 +143,24 @@ body {
   visibility: visible;
 }
 
-/* ---------- CONTENT SECTION (Indian Flag Background, Mobile Safe) ---------- */
+/* ---------- CONTENT SECTION (Govt Job Background) ---------- */
 .content {
-  margin-top: 70px;
+  margin-top: 0px;
   width: 100%;
   min-height: 65vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url("https://cdn.vectorstock.com/i/1000v/83/58/flag-of-india-made-in-tricolor-texture-and-wheel-vector-4598358.jpg");
+    url("https://plutuseducation.com/blog/wp-content/uploads/2025/02/image-229-768x403.jpeg");
   background-position: center center;
-  background-size: cover; /* ensures natural scaling */
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 50px 20px 60px; /* extra bottom padding for safe zone */
+  padding: 50px 20px 60px;
   color: #fff;
   overflow: hidden;
-  border: none;
 }
 
 .content h1 {
@@ -191,8 +190,8 @@ body {
 
   .content {
     min-height: 55vh;
-    padding: 70px 15px 80px; /* safe padding to prevent line visibility */
-    background-size: cover; /* always scales correctly */
+    padding: 70px 15px 80px;
+    background-size: cover;
     background-position: center top;
     background-attachment: scroll;
   }
