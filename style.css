@@ -1,24 +1,25 @@
 * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
-  background-color: #f7f9fc;
+  background-color: #eaf2fb;
   min-height: 100vh;
+  color: #222;
 }
 
-/* ---------- TOP NAVBAR ---------- */
+/* ---------- NAVBAR ---------- */
 .navbar {
-  background: linear-gradient(90deg, #004aad, #007bff);
+  background: linear-gradient(90deg, #002b5b, #004aad);
   color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 12px 25px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
   position: fixed;
   top: 0;
   left: 0;
@@ -26,7 +27,6 @@ body {
   z-index: 1002;
 }
 
-/* Left section: Logo + Site name */
 .navbar-left {
   display: flex;
   align-items: center;
@@ -46,7 +46,6 @@ body {
   letter-spacing: 0.5px;
 }
 
-/* Right section: Links */
 .nav-links {
   display: flex;
   align-items: center;
@@ -77,7 +76,7 @@ body {
 /* ---------- SIDEBAR ---------- */
 .sidebar {
   width: 270px;
-  background: linear-gradient(180deg, #004aad, #0066cc);
+  background: linear-gradient(180deg, #002b5b, #005fcc);
   color: white;
   position: fixed;
   top: 0;
@@ -106,7 +105,7 @@ body {
 
 .sidebar a i {
   margin-right: 15px;
-  width: 20px; /* fixed width for alignment */
+  width: 20px;
   text-align: center;
 }
 
@@ -114,7 +113,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* Close button inside sidebar */
 .close-btn {
   position: absolute;
   top: 20px;
@@ -126,7 +124,7 @@ body {
   cursor: pointer;
 }
 
-/* ---------- OVERLAY (background behind sidebar) ---------- */
+/* ---------- OVERLAY ---------- */
 .overlay {
   position: fixed;
   top: 0;
@@ -145,15 +143,41 @@ body {
   visibility: visible;
 }
 
-/* ---------- CONTENT ---------- */
+/* ---------- CONTENT SECTION ---------- */
 .content {
-  padding: 120px 20px;
+  margin-top: 70px;
+  width: 100%;
+  min-height: 65vh; /* fits laptop screens better */
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+ url("https://cdn.vectorstock.com/i/1000v/83/58/flag-of-india-made-in-tricolor-texture-and-wheel-vector-4598358.jpg");
+
+
+  /* Image: dark government office desk-style */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  border: 1px solid black;
+  padding: 50px 20px;
+  color: #fff;
 }
-.content p{
-  font-size: 20px;
-  color: rgb(177, 68, 68);
+
+.content h1 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.content p {
+  font-size: 19px;
+  color: #d9e7ff;
+  max-width: 700px;
+  line-height: 1.6;
 }
 
 /* ---------- RESPONSIVE ---------- */
@@ -164,5 +188,18 @@ body {
 
   .menu-btn {
     display: block;
+  }
+
+  .content {
+    min-height: 55vh; /* smaller for mobile */
+    padding: 70px 15px;
+  }
+
+  .content h1 {
+    font-size: 26px;
+  }
+
+  .content p {
+    font-size: 17px;
   }
 }
