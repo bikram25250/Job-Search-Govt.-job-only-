@@ -349,6 +349,7 @@ body {
 .view-all-btn:hover {
   background: linear-gradient(90deg, #002b5b, #004aad);
   transform: translateY(-2px);
+  color:#dfe6ee;
 }
 
 /* ---------- RESPONSIVE notice board---------- */
@@ -374,6 +375,93 @@ body {
   }
 }
 
+/* ---------- LATEST JOBS SECTION ---------- */
+.latest-jobs-section {
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+.latest-jobs-section h3 {
+  color: #002b5b;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* ---------- LATEST JOBS CONTAINER (ROW-WISE ON DESKTOP) ---------- */
+.latest-jobs {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;  /* Gap between job cards */
+  flex-wrap: wrap;  /* Allow wrapping for smaller screens */
+}
+
+/* Job card design */
+.job-card-item {
+  background-color: #f0f4f9;
+  border-radius: 8px;
+  padding: 20px;
+  width: 48%;  /* Adjust width of each card */
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.job-card-item h4 {
+  color: #002b5b;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.job-card-item p {
+  font-size: 14px;
+  color: #555;
+  margin: 4px 0;
+}
+
+.job-card-item p strong {
+  color: #004aad;
+}
+
+/* ---------- RESPONSIVE DESIGN FOR MOBILE ---------- */
+@media (max-width: 768px) {
+  .latest-jobs {
+    flex-direction: column;  /* Stack cards vertically on mobile */
+    align-items: center;     /* Center cards on mobile */
+  }
+
+  .job-card-item {
+    width: 100%;  /* Full width of the container on mobile */
+    margin-bottom: 15px;  /* Space between job cards */
+  }
+}/* ---------- VIEW ALL JOBS BUTTON ---------- */
+.view-all-jobs {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.view-all-btn {
+  background-color: #004aad;  /* Blue button background */
+  color: #fff;  /* White text */
+  font-size: 16px;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.view-all-btn:hover {
+  background-color: #ffda79;  /* Gold on hover */
+  color: #dfe6ee;  /* Dark text */
+  transform: translateY(-3px);  /* Slight lift effect on hover */
+}
+
+.view-all-btn:focus {
+  outline: none;
+}
 
 /* ---------- FOOTER section ---------- */
 .footer {
@@ -465,6 +553,7 @@ body {
     text-align: center;
   }
 } 
+
 
 
 
