@@ -199,6 +199,11 @@ body {
   max-width: 700px;
   line-height: 1.6;
 }
+@media (max-width:768px) {
+  .content{
+    margin-top: 50px;
+  }
+}
 
 /* ---------- RESPONSIVE navigation bar---------- */
 @media (max-width: 768px) {
@@ -555,3 +560,4 @@ body {
     text-align: center;
   }
 } 
+
