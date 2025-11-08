@@ -165,9 +165,9 @@ body {
   visibility: visible;
 }
 
-/* ---------- CONTENT SECTION ---------- */
+/* ---------- CONTENT SECTION after navigatiion ---------- */
 .content {
-  margin-top: 70px;
+  margin-top:80px;
   width: 100%;
   min-height: 65vh;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
@@ -200,7 +200,7 @@ body {
   line-height: 1.6;
 }
 
-/* ---------- RESPONSIVE nav ---------- */
+/* ---------- RESPONSIVE navigation bar---------- */
 @media (max-width: 768px) {
   .nav-links {
     display: none;
@@ -321,7 +321,8 @@ body {
   padding: 0;
 }
 
-.notice-container li {
+.notice-container li,a {
+  text-decoration: none;
   font-size: 16px;
   color: #003366;
   padding: 10px 5px;
@@ -332,7 +333,7 @@ body {
   border-bottom: none;
 }
 
-/* View All Button */
+/* View All Button (Notice section button) */
 .view-all-btn {
   display: inline-block;
   margin-top: 25px;
@@ -352,7 +353,7 @@ body {
   color:#dfe6ee;
 }
 
-/* ---------- RESPONSIVE notice board---------- */
+/* ---------- RESPONSIVE notice board section ---------- */
 @media (max-width: 768px) {
   .notice-board h2 {
     font-size: 24px;
@@ -425,7 +426,7 @@ body {
   color: #004aad;
 }
 
-/* ---------- RESPONSIVE DESIGN FOR MOBILE ---------- */
+/* ---------- RESPONSIVE DESIGN (Latest job section) FOR MOBILE ---------- */
 @media (max-width: 768px) {
   .latest-jobs {
     flex-direction: column;  /* Stack cards vertically on mobile */
@@ -436,7 +437,8 @@ body {
     width: 100%;  /* Full width of the container on mobile */
     margin-bottom: 15px;  /* Space between job cards */
   }
-}/* ---------- VIEW ALL JOBS BUTTON ---------- */
+
+}/* ---------- VIEW ALL JOBS BUTTON (Latest job section)  ---------- */
 .view-all-jobs {
   text-align: center;
   margin-top: 20px;
@@ -461,7 +463,7 @@ body {
 
 .view-all-btn:focus {
   outline: none;
-}
+} 
 
 /* ---------- FOOTER section ---------- */
 .footer {
@@ -553,8 +555,3 @@ body {
     text-align: center;
   }
 } 
-
-
-
-
-
