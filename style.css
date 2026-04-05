@@ -85,6 +85,30 @@ body {
   width: 100%;
 }
 
+/* Sign Up Button Style */
+.signup-btn {
+  display: inline-block;
+  margin-left: 30px;
+  padding: 10px 22px;
+  background: linear-gradient(90deg, #004aad, #002b5b);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 43, 91, 0.3);
+}
+
+.signup-btn:hover {
+  background: linear-gradient(90deg, #002b5b, #004aad);
+  transform: translateY(-2px);
+  color: #dfe6ee !important;
+}
+
+.signup-btn::after {
+  display: none;
+}
+
 /* ---------- HAMBURGER BUTTON ---------- */
 .menu-btn {
   font-size: 28px;
@@ -109,6 +133,22 @@ body {
   z-index: 1003;
   padding-top: 80px;
   box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-signup {
+  display: block;
+  margin: 20px 30px;
+  padding: 12px;
+  text-align: center;
+  background: linear-gradient(90deg, #004aad, #002b5b);
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.sidebar-signup:hover {
+  background: linear-gradient(90deg, #002b5b, #004aad);
 }
 
 .sidebar.active {
@@ -213,6 +253,12 @@ body {
 
   .menu-btn {
     display: block;
+  }
+
+  .signup-btn {
+  margin-left: 0;
+  padding: 8px 18px;
+  font-size: 14px;
   }
 
   .content {
