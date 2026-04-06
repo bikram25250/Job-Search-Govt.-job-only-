@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Govt. Job Updates</title>
+<link rel="stylesheet" href="About_page.css">
+<!-- Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-…" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+<!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="navbar-left">
+<img src="F:\HTML file\Job Search website\Job-Search-Govt.-job-only--main\Images\job-search-logo.webp" alt="Logo">
+<span class="site-name">Job Search</span>
+</div>
+
+<div class="nav-links">
+  <a href="index.html">Home</a>
+  <a href="About_page.html">About</a>
+  <a href="#">Join Class</a>
+  <a href="Signup_page.html" class="signup-btn">Sign Up</a>
+</div>
+
+<!-- Hamburger -->
+<button class="menu-btn" id="menu-btn" onclick="openSidebar()">&#9776;</button>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+<button class="close-btn" onclick="closeSidebar()">✖</button>
+<a href="index.html"><i class="fas fa-home"></i> Home</a>
+<a href="About_page.html"><i class="fas fa-info-circle"></i> About</a>
+<a href="#"><i class="fas fa-chalkboard-teacher"></i> Join Class</a>
+<a href="Signup_page.html" class="sidebar-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+</div>
+
+# About Page Code
+
+```html
+<!-- Keep your existing Navbar here -->
+
+<section class="about-section">
+  <div class="about-container">
+    <h1>About Job Search</h1>
+    <p class="about-intro">
+      Job Search is a platform created to help students and job seekers find the latest government job notifications, exam updates, admit cards, results, and important notices in one place.
+    </p>
+
+    <div class="about-boxes">
+      <div class="about-box">
+        <i class="fas fa-bullseye"></i>
+        <h3>Our Mission</h3>
+        <p>
+          Our mission is to provide accurate and fast government job updates so that every student can easily apply for suitable opportunities without missing any important deadline.
+        </p>
+      </div>
+
+      <div class="about-box">
+  <i class="fas fa-briefcase"></i>
+  <h3>What We Provide</h3>
+  <p>
+    We provide updates for 10th pass, 12th pass, ITI, Diploma, Graduate and Undergraduate level government jobs along with application dates, direct links and free online classes to help students prepare better.
+  </p>
+</div>
+
+      <div class="about-box">
+        <i class="fas fa-users"></i>
+        <h3>Why Choose Us</h3>
+        <p>
+          We keep the website simple, mobile-friendly and easy to use so that everyone can quickly find the right job information anytime.
+        </p>
+      </div>
+
+    <div class="about-box free-class-box">
+      <i class="fas fa-chalkboard-teacher"></i>
+      <h3>Free Classes</h3>
+      <p>
+        Job Search also provides free classes for students so that they can prepare for government job exams without spending money. Our aim is to make quality education available to everyone.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="developer-box">
+      <h2>Developed By</h2>
+      <p><strong>Bikram Haldar</strong></p>
+      <p>This website is developed to make government job searching easier for everyone.</p>
+    </div>
+  </div>
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
