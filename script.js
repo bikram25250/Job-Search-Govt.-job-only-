@@ -27,3 +27,18 @@ function togglePassword(fieldId, element) {
     icon.classList.replace('fa-eye-slash', 'fa-eye');
   }
 }
+// Signup page success message
+const signupForm = document.querySelector(".signup-form");
+const signupBtn = document.getElementById("signupBtn");
+const btnText = document.getElementById("btnText");
+
+signupForm.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  btnText.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Account Creating...';
+  signupBtn.disabled = true;
+
+  setTimeout(() => {
+    window.location.href = "Success_Message.html";
+  }, 2000);
+});
