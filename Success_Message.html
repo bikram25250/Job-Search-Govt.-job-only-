@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Success_Message</title>
+
+  <!-- CSS File -->
+  <link rel="stylesheet" href="Success_Message.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="success-popup" id="successPopup">
+  <div class="success-box">
+    <div class="success-icon">
+      <i class="fas fa-check"></i>
+    </div>
+
+    <h2>Welcome, <span id="userName">Bikram</span>!</h2>
+
+    <p class="success-message">
+      Your account has been created successfully. You can now Sign In and access your classes and latest exam updates.
+    </p>
+
+    <div class="success-buttons">
+      <a href="index.html" class="back-btn">Back to Home</a>
+      <a href="join-class.html" class="login-btn">Sign In</a>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// Example: show user name dynamically after signup
+const userName = "Bikram Haldar"; // later this will come from signup form
+
+document.getElementById("userName").textContent = userName;
+</script>
+
+</body>
+</html>
+
