@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Signin_Page</title>
+  <link rel="stylesheet" href="Signin_page.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+ <!-- Overlay -->
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+<!-- Navbar -->
+<div class="navbar">
+<div class="navbar-left">
+<img src="F:\HTML file\Job Search website\Job-Search-Govt.-job-only--main\Images\job-search-logo.webp" alt="Logo">
+<span class="site-name">Job Search</span>
+</div>
+
+<div class="nav-links">
+  <a href="About_page.html">About</a>
+  <a href="Join_Class.html">Join Class</a>
+  <a href="Signup_page.html" class="signup-btn">Sign Up</a>
+</div>
+
+<!-- Hamburger -->
+<button class="menu-btn" id="menu-btn" onclick="openSidebar()">&#9776;</button>
+</div>
+
+<!-- Sidebar -->
+<div class="sidebar" id="sidebar">
+<button class="close-btn" onclick="closeSidebar()">✖</button>
+<a href="About_page.html"><i class="fas fa-info-circle"></i> About</a>
+<a href="Join_Class.html"><i class="fas fa-chalkboard-teacher"></i> Join Class</a>
+<a href="Signup_page.html" class="sidebar-signup"><i class="fas fa-user-plus"></i> Sign Up</a>
+</div>
+
+
+  <!-- Signin Section -->
+  <section class="signin-section">
+    <div class="signin-container">
+
+      <div class="signin-icon">
+        <i class="fas fa-user-lock"></i>
+      </div>
+
+      <h2>Welcome Back</h2>
+      <p>Signin to access your classes</p>
+
+      <form class="signin-form">
+
+        <div class="input-group">
+          <i class="fas fa-envelope main-icon"></i>
+          <input type="email" placeholder="Email Address" required>
+        </div>
+
+        <div class="input-group">
+          <i class="fas fa-lock main-icon"></i>
+          <input type="password" id="password" placeholder="Password" required>
+          <span class="toggle-password" onclick="togglePassword()">
+            <i class="fas fa-eye" id="eyeIcon"></i>
+          </span>
+        </div>
+
+        <div class="extra-options">
+          <label class="remember">
+            <input type="checkbox">
+            Remember Me
+          </label>
+
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="signin-btn">
+          <i class="fas fa-sign-in-alt"></i> Sign In
+        </button>
+      </form>
+
+      <div class="signup-link">
+        Don't have an account? <a href="Signup_page.html">Create Account</a>
+      </div>
+
+    </div>
+  </section>
+
+<script src="script.js"></script>
+
+  </body>
+</html>
