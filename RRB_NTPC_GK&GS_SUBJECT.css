@@ -91,13 +91,13 @@
         margin-bottom: 30px;
       }
 
-      .video-grid {
-        grid-template-columns: repeat(2, 1fr);
+     .video-grid {
+        grid-template-columns: 1fr;
         gap: 18px;
       }
 
       .video-card iframe {
-        height: 160px;
+        height: 200px;
       }
 
       .video-title {
