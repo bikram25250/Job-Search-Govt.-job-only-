@@ -91,7 +91,7 @@
         margin-bottom: 30px;
       }
 
-     .video-grid {
+      .video-grid {
         grid-template-columns: 1fr;
         gap: 18px;
       }
