@@ -16,7 +16,7 @@
 <!-- Navbar -->
 <div class="navbar">
 <div class="navbar-left">
-<img src="job-search-logo.webp" alt="Logo">
+<img src="Images\job-search-logo.webp" alt="Logo">
 <span class="site-name">Job Search</span>
 </div>
 
@@ -45,15 +45,15 @@
     <h2>Create Your Account</h2>
     <p>Job Search</p>
 
-    <form class="signup-form">
+    <form class="signup-form" id="signupForm">
       <div class="input-group">
         <i class="fas fa-user"></i>
-        <input type="text" placeholder="Full Name" required>
+        <input type="text" id="fullname" placeholder="Full Name" required>
       </div>
 
       <div class="input-group">
       <i class="fas fa-venus-mars"></i>
-    <select required>
+    <select id="gender" required>
       <option value="" disabled selected>Select Gender</option>
       <option value="male">Male</option>
       <option value="female">Female</option>
@@ -63,21 +63,21 @@
 
       <div class="input-group">
         <i class="fas fa-envelope"></i>
-        <input type="email" placeholder="Email Address" required>
+        <input type="email" id="email" placeholder="Email Address" required>
       </div>
 
       <div class="input-group password-group">
   <i class="fas fa-lock"></i>
   <input type="password" id="password" placeholder="Create Password" required>
-  <span class="toggle-password" onclick="togglePassword('password', this)">
+ <span class="toggle-password" onclick="toggleSignupPassword('password', this)">
     <i class="fas fa-eye"></i>
   </span>
 </div>
 
 <div class="input-group password-group">
   <i class="fas fa-lock"></i>
-  <input type="password" id="confirm-password" placeholder="Confirm Password" required>
-  <span class="toggle-password" onclick="togglePassword('confirm-password', this)">
+  <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+  <span class="toggle-password" onclick="toggleSignupPassword('confirmPassword', this)">
     <i class="fas fa-eye"></i>
   </span>
 </div>
@@ -96,6 +96,8 @@
 </section>
 
 <script src="script.js"></script>
+<script type="module" src="firebase.js"></script>
 
 </body>
 </html>
+
