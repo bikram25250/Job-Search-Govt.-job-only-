@@ -15,7 +15,7 @@
 <!-- Navbar -->
 <div class="navbar">
 <div class="navbar-left">
-<img src="job-search-logo.webp" alt="Logo">
+<img src="F:\HTML file\Job Search website\Job-Search-Govt.-job-only--main\Images\job-search-logo.webp" alt="Logo">
 <span class="site-name">Job Search</span>
 </div>
 
@@ -51,17 +51,17 @@
       <h2>Welcome Back</h2>
       <p>Signin to access your classes</p>
 
-      <form class="signin-form">
+      <form class="signin-form" id="signinForm">
 
         <div class="input-group">
           <i class="fas fa-envelope main-icon"></i>
-          <input type="email" placeholder="Email Address" required>
+          <input type="email" id="loginEmail" placeholder="Email Address" required>
         </div>
 
         <div class="input-group">
           <i class="fas fa-lock main-icon"></i>
-          <input type="password" id="password" placeholder="Password" required>
-          <span class="toggle-password" onclick="togglePassword()">
+          <input type="password" id="loginPassword" placeholder="Password" required>
+          <span class="toggle-password" onclick="toggleSigninPassword()">
             <i class="fas fa-eye" id="eyeIcon"></i>
           </span>
         </div>
@@ -72,7 +72,7 @@
             Remember Me
           </label>
 
-          <a href="#" class="forgot-password">Forgot Password?</a>
+          <a href="Forgot_password.html" class="forgot-password">Forgot Password?</a>
         </div>
 
         <button type="submit" class="signin-btn">
@@ -88,6 +88,8 @@
   </section>
 
 <script src="script.js"></script>
+<script type="module" src="firebase.js"></script>
 
   </body>
 </html>
+
