@@ -34,10 +34,8 @@
 </div>
 
 <script>
-// Example: show user name dynamically after signup
-const userName = "Bikram Haldar"; // later this will come from signup form
-
-document.getElementById("userName").textContent = userName;
+document.getElementById("userName").textContent =
+  localStorage.getItem("userName") || "User";
 </script>
 
 </body>
