@@ -13,12 +13,18 @@
     }
 
     .video-heading {
-      text-align: center;
-      color: #002b5b;
-      font-size: 42px;
-      font-weight: 700;
-      margin-bottom: 40px;
-    }
+  text-align: center;
+  color: #002b5b;
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(135deg, #e6f0ff, #cddffb);
+  padding: 15px 0;
+}
+
 
     .video-grid {
       display: grid;
