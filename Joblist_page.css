@@ -8,9 +8,15 @@
 }
 
 .jobs-heading{
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
   max-width: 1100px;
   margin: 0 auto 30px;
   text-align: center;
+  background: #e6f0ff;
+  padding-top: 10px;
 }
 
 .jobs-heading h1{
