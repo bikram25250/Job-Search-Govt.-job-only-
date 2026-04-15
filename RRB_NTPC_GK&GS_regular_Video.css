@@ -12,7 +12,7 @@
       margin: 0 auto;
     }
 
-    .video-heading {
+.video-heading {
   text-align: center;
   color: #002b5b;
   font-size: 42px;
@@ -93,7 +93,9 @@
       }
 
       .video-heading {
+        top:0px;
         font-size: 30px;
+        padding: 12px 0;
         margin-bottom: 30px;
       }
 
