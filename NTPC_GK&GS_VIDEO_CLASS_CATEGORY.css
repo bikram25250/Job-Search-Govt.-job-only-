@@ -10,6 +10,7 @@
 }
 
 .gkgs-heading {
+  display:block;
   text-align: center;
   font-size: 38px;
   color: #002b5b;
