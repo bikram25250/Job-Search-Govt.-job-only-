@@ -10,7 +10,6 @@
 }
 
 .gkgs-heading {
-  display:block;
   text-align: center;
   font-size: 38px;
   color: #002b5b;
@@ -26,7 +25,6 @@
 
   box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
-
 
 .gkgs-list {
   display: grid;
@@ -95,7 +93,7 @@
     padding: 100px 15px 40px;
   }
 
- @media (max-width: 768px) {
+  @media (max-width: 768px) {
   .gkgs-heading {
     position: sticky;
     top: 0;
