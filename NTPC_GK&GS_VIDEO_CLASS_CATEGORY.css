@@ -94,9 +94,16 @@
     padding: 100px 15px 40px;
   }
 
- .gkgs-heading {
-  top: 0;
-  padding: 12px 0;
+ @media (max-width: 768px) {
+  .gkgs-heading {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    font-size: 28px;
+    padding: 12px 0;
+    background: linear-gradient(135deg, #e6f0ff, #cddffb);
+  }
 }
 
   .gkgs-list {
