@@ -15,7 +15,17 @@
   color: #002b5b;
   margin-bottom: 40px;
   font-weight: 700;
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  background: linear-gradient(135deg, #e6f0ff, #cddffb);
+  padding: 15px 0;
+
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
+
 
 .gkgs-list {
   display: grid;
@@ -84,10 +94,10 @@
     padding: 100px 15px 40px;
   }
 
-  .gkgs-heading {
-    font-size: 28px;
-    margin-bottom: 30px;
-  }
+ .gkgs-heading {
+  top: 0;
+  padding: 12px 0;
+}
 
   .gkgs-list {
     grid-template-columns: 1fr;
