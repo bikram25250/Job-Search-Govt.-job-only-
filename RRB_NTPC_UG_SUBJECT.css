@@ -92,3 +92,24 @@
      font-size: 20px;
    }
  }
+
+/* Show user name after heading */
+.welcome-user {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: #004aad;
+  margin-top: -15px;
+  margin-bottom: 35px;
+}
+
+.welcome-user span {
+  color: #002b5b;
+}
+
+@media (max-width: 768px) {
+  .welcome-user {
+    font-size: 17px;
+    margin-bottom: 25px;
+  }
+}
