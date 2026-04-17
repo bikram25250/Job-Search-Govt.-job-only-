@@ -17,6 +17,9 @@
 
       <h1 class="subject-heading">RRB NTPC SUBJECT 2026 (UG)</h1>
 
+      <!-- This peragraph tag <p> useing only for show user name -->
+      <p id="welcomeUser" class="welcome-user"></p>
+
       <div class="subject-list">
         <a href="NTPC_MATH_VIDEO_CLASS_CATEGORY.html" class="subject-card">MATHEMATICS</a>
         <a href="NTPC_REASONING_VIDEO_CLASS_CATEGORY.html" class="subject-card">REASONING</a>
@@ -33,6 +36,15 @@
     </div>
   </section>
 
-</body>
+ <!-- This is for show user name after heading-->
+  <script>
+    const userName = localStorage.getItem("userName");
+    const welcomeUser = document.getElementById("welcomeUser");
 
+    if (userName && welcomeUser) {
+      welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+    }
+  </script>
+  
+</body>
 </html>
