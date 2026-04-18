@@ -134,14 +134,20 @@
 
 @media (max-width: 768px) {
   .welcome-user {
-    max-width: 92%;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: 15px;
-    padding: 10px 14px;
+    width: auto;
+    max-width: 80%;
+    margin: 0 auto 24px;
+
+    padding: 8px 12px;
+    gap: 6px;
+
+    font-size: 14px;
+    border-radius: 12px;
   }
 
   .welcome-user span {
-    font-size: 14px;
+    font-size: 13px;
+    padding: 3px 7px;
+    letter-spacing: 0.5px;
   }
 }
