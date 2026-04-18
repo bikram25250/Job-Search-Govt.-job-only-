@@ -9,7 +9,8 @@ import {
 import {
   getFirestore,
   doc,
-  setDoc
+  setDoc,
+  getDoc
 } from "https://www.gstatic.com/firebasejs/10.12.2/firebase-firestore.js";
 
 const firebaseConfig = {
@@ -109,7 +110,14 @@ if (signinForm) {
     const password = document.getElementById("loginPassword").value;
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
+      const userCredential = await signInWithEmailAndPassword(auth, email, password);
+
+      const userRef = doc(db, "users", userCredential.user.uid);
+      const userSnap = await getDoc(userRef);
+
+      if (userSnap.exists()) {
+        localStorage.setItem("userName", userSnap.data().USER_NAME);
+      }
 
       signinBtn.disabled = false;
       signinBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign In';
@@ -134,7 +142,7 @@ if (signinForm) {
       } else if (error.code === "auth/invalid-email") {
         alert("Invalid email address.");
       } else {
-        alert("Unable to sign in. Please check your details.");
+        alert("Unable to sign in. Please check your internet connection");
       }
     }
   });
