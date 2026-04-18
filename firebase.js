@@ -142,7 +142,7 @@ if (signinForm) {
       } else if (error.code === "auth/invalid-email") {
         alert("Invalid email address.");
       } else {
-        alert("Unable to sign in. Please check your internet connection");
+        alert("Unable to Sign-In.");
       }
     }
   });
