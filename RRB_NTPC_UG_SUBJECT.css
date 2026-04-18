@@ -116,7 +116,25 @@
 
 @media (max-width: 768px) {
   .welcome-user {
-    font-size: 17px;
-    margin-bottom: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: fit-content;
+    max-width: 95%;
+    margin: 0 auto 24px;
+
+    padding: 10px 14px;
+    font-size: 15px;
+    text-align: center;
+  }
+
+  .welcome-user span {
+    font-size: 15px;
+    padding: 3px 8px;
+    max-width: 100%;
+    word-break: break-word;
   }
 }
