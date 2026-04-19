@@ -15,6 +15,9 @@
 
       <h1 class="gkgs-heading">GK / GS Classes for NTPC exam 2026</h1>
 
+       <!-- This peragraph tag <p> useing only for show user name -->
+        <p id="welcomeUser" class="welcome-user"></p>
+
       <div class="gkgs-list">
 
         <a href="RRB_NTPC_GK&GS_regular_Video.html" class="gkgs-card">
@@ -50,6 +53,18 @@
 
     </div>
   </section>
+
+  
+ <!-- This is for show user name after heading-->
+    <script>
+        const userName = localStorage.getItem("userName");
+        const welcomeUser = document.getElementById("welcomeUser");
+
+        if (userName && welcomeUser) {
+            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        }
+    </script>
+
 
 </body>
 </html>
