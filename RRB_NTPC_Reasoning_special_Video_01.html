@@ -17,7 +17,10 @@
 
             <h1 class="video-heading">Reasoning Special class-01 (2026)</h1>
 
-            <div class="video-grid">
+             <!-- This peragraph tag <p> useing only for show user name -->
+              <p id="welcomeUser" class="welcome-user"></p>
+
+         <div class="video-grid">
 
                 <div class="video-card">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/8WbmH4S2bDM?si=z1chZW4MZKK24ekn"
@@ -60,6 +63,15 @@
         </div>
     </section>
 
-</body>
+ <!-- This is for show user name after heading-->
+    <script>
+        const userName = localStorage.getItem("userName");
+        const welcomeUser = document.getElementById("welcomeUser");
 
+        if (userName && welcomeUser) {
+            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        }
+    </script>
+    
+</body>
 </html>
