@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RRB NTPC SUBJECT-UG</title>
+
+  <link rel="stylesheet" href="GRAM_PANCHAYET_SUBJECT.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <section class="subject-page">
+    <div class="subject-container">
+
+      <h1 class="subject-heading">GRAM PANCHAYET SUBJECT 2026</h1>
+
+      <!-- This peragraph tag <p> useing only for show user name -->
+      <p id="welcomeUser" class="welcome-user"></p>
+
+      <div class="subject-list">
+        <a href="#" class="subject-card">ENGLISH</a>
+        <a href="#" class="subject-card">BENGALI</a>
+        <a href="#" class="subject-card">ARITHMETIC</a>
+        <a href="#" class="subject-card">GK / GS</a>
+    
+      </div>
+
+      <a href="Join_Class.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Sign Out
+      </a>
+
+    </div>
+  </section>
+
+  <!-- This is for show user name after heading-->
+  <script>
+    const userName = localStorage.getItem("userName");
+    const welcomeUser = document.getElementById("welcomeUser");
+
+    if (userName && welcomeUser) {
+      welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+    }
+  </script>
+
+</body>
+</html>
