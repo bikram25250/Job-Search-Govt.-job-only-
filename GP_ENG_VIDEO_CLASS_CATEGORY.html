@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENGLISH Classes Category</title>
+
+  <link rel="stylesheet" href="GP_ENG_VIDEO_CLASS_CATEGORY.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+  <section class="gkgs-page">
+    <div class="gkgs-container">
+
+      <h1 class="gkgs-heading">ENGLISH Classes for GP 2026</h1>
+
+       <!-- This peragraph tag <p> useing only for show user name -->
+       <p id="welcomeUser" class="welcome-user"></p>
+
+      <div class="gkgs-list">
+
+        <a href="RRB_NTPC_GK&GS_regular_Video.html" class="gkgs-card">
+          <i class="fas fa-book-open"></i>
+          <h2>English Class</h2>
+          <p>0 Classes are included</p>
+        </a>
+
+        <a href="#" class="gkgs-card">
+          <i class="fas fa-broadcast-tower"></i>
+          <h2>Live English Class </h2>
+          <p>0 Classes are included</p>
+        </a>
+
+      </div>
+
+      <a href="RRB_NTPC_UG_SUBJECT.html" class="back-btn">
+        <i class="fas fa-arrow-left"></i>
+        Back
+      </a>
+
+    </div>
+  </section>
+
+   <!-- This is for show user name after heading-->
+    <script>
+        const userName = localStorage.getItem("userName");
+        const welcomeUser = document.getElementById("welcomeUser");
+
+        if (userName && welcomeUser) {
+            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        }
+    </script>
+
+
+</body>
+</html>
