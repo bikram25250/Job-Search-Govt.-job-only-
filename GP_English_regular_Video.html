@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English class</title>
+
+  <link rel="stylesheet" href="GP_English_regular_Video.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+  <section class="video-page">
+    <div class="video-container">
+
+      <h1 class="video-heading">English Regular class 2026</h1>
+
+       <!-- This peragraph tag <p> useing only for show user name -->
+        <p id="welcomeUser" class="welcome-user"></p>
+
+      <div class="video-grid">
+
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/1j72Z80-R8k?si=WWsiT70lNuZq12sp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="video-title">English Class 1</div>
+        </div>
+
+        <div class="video-card">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/MuPKcrw4oGY?si=TuBDWj310oGQX3Mp" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          <div class="video-title">English Class 2</div>
+        </div>
+
+     </div>
+
+      <div class="bottom-options">
+        <a href="GP_ENG_VIDEO_CLASS_CATEGORY.html" class="nav-btn">
+          <i class="fas fa-arrow-left"></i>
+          Back
+        </a>
+
+        <a href="GRAM_PANCHAYET_SUBJECT.html" class="nav-btn">
+          <i class="fas fa-house"></i>
+          All subject
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+<!-- This is for show user name after heading-->
+    <script>
+        const userName = localStorage.getItem("userName");
+        const welcomeUser = document.getElementById("welcomeUser");
+
+        if (userName && welcomeUser) {
+            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        }
+    </script>
+
+</body>
+</html>
