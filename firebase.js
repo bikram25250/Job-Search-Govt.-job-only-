@@ -115,9 +115,21 @@ if (signinForm) {
       const userRef = doc(db, "users", userCredential.user.uid);
       const userSnap = await getDoc(userRef);
 
+      //if (userSnap.exists()) {
+      //   localStorage.setItem("userName", userSnap.data().USER_NAME);
+      //    localStorage.setItem("userId", userSnap.data().USER_ID);
+      // }
+      //New line
       if (userSnap.exists()) {
+
+        console.log("Firestore Data =", userSnap.data());
+
         localStorage.setItem("userName", userSnap.data().USER_NAME);
+        localStorage.setItem("userId", userSnap.data().USER_ID);
+
+        console.log("Saved User ID =", localStorage.getItem("userId"));
       }
+      //end line s
 
       signinBtn.disabled = false;
       signinBtn.innerHTML = '<i class="fas fa-sign-in-alt"></i> Sign In';
