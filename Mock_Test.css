@@ -1,0 +1,89 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"Poppins",sans-serif;
+}
+
+body{
+  min-height:100vh;
+  background:linear-gradient(135deg,#e6f0ff,#cddffb);
+  padding:20px;
+}
+
+.container{
+  max-width:800px;
+  margin:auto;
+}
+
+.welcome-box{
+  background:white;
+  padding:18px;
+  border-radius:15px;
+  margin-top:20px;
+  text-align:center;
+  box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.welcome-box h3{
+  color:#002b5b;
+  font-size:24px;
+}
+
+.main-heading{
+  text-align:center;
+  margin:35px 0;
+  color:#002b5b;
+  font-size:40px;
+}
+
+.exam-card{
+  background:white;
+  text-decoration:none;
+  color:#002b5b;
+  padding:25px;
+  margin-bottom:20px;
+  border-radius:20px;
+
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  box-shadow:0 6px 18px rgba(0,0,0,0.12);
+
+  transition:0.3s;
+}
+
+.exam-card:hover{
+  transform:translateY(-5px);
+}
+
+.exam-card span{
+  font-size:22px;
+  font-weight:600;
+}
+
+.exam-card i{
+  font-size:24px;
+}
+
+.exam-card small{
+  color:red;
+  font-weight:600;
+}
+
+@media(max-width:768px){
+
+  .main-heading{
+    font-size:30px;
+  }
+
+  .exam-card{
+    padding:20px;
+  }
+
+  .exam-card span{
+    font-size:18px;
+  }
+
+}
