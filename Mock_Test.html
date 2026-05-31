@@ -11,5 +11,15 @@
     <h1>Mock Test Section</h1>
     <p>Comming Soon...</p>
 
+    <!-- This is for show user name after heading-->
+    <script>
+        const userName = localStorage.getItem("userName");
+        const welcomeUser = document.getElementById("welcomeUser");
+
+        if (userName && welcomeUser) {
+            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        }
+    </script>
+
 </body>
 </html>
