@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRB NTPC Mock Tests</title>
+
+    <link rel="stylesheet" href="GP_MockTest_Subject.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Back Button -->
+
+        <a href="Mock_Test.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i> Back
+        </a>
+
+        <!-- User Info -->
+
+        <div class="user-box">
+
+            <h2 id="welcomeUser">Welcome 👋</h2>
+
+            <p id="userId"></p>
+
+        </div>
+
+        <!-- Heading -->
+
+        <h1 class="page-title">
+            Gram Panchayat 2026
+        </h1>
+
+        <p class="subtitle">
+            Select a subject to start practicing
+        </p>
+
+        <!-- Subject Cards -->
+
+        <a href="NTPC_MATH_TESTS.html" class="subject-card">
+         <i class="fas fa-clipboard-check"></i>
+
+            <div>
+                <h3>Bengali</h3>
+                <p></p>
+            </div>
+
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <a href="NTPC_REASONING_TESTS.html" class="subject-card">
+            <i class="fas fa-clipboard-check"></i>
+
+            <div>
+                <h3>English</h3>
+                <p></p>
+            </div>
+
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <a href="NTPC_GK_TESTS.html" class="subject-card">
+            <i class="fas fa-clipboard-check"></i>
+
+            <div>
+                <h3>Arithmetic</h3>
+                <p></p>
+            </div>
+
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+         <a href="NTPC_CA_TESTS.html" class="subject-card">
+            <i class="fas fa-clipboard-check"></i>
+
+            <div>
+                <h3>Geography</h3>
+                <p></p>
+            </div>
+
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+
+        <a href="NTPC_CA_TESTS.html" class="subject-card">
+            <i class="fas fa-clipboard-check"></i>
+
+            <div>
+                <h3>Current Affairs</h3>
+                <p></p>
+            </div>
+
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+    </div>
+
+    <script>
+
+        const userName = localStorage.getItem("userName");
+        const userId = localStorage.getItem("userId");
+
+        if (userName) {
+            document.getElementById("welcomeUser").innerHTML =
+                `Welcome, ${userName} 👋`;
+        }
+
+        if (userId) {
+            document.getElementById("userId").innerHTML =
+                `🆔 User ID : ${userId}`;
+        }
+
+    </script>
+
+</body>
+
+</html>
