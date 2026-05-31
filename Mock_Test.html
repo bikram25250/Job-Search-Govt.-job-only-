@@ -4,70 +4,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mock Test - Job Search</title>
+    <title>Mock Test Dashboard</title>
 
     <link rel="stylesheet" href="Mock_Test.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
     <div class="container">
 
-        <!-- Welcome Box -->
+        <!-- Welcome Card -->
+
         <div class="welcome-box">
-            <h3 id="welcomeUser">Welcome 👋</h3>
+
+            <h2 id="welcomeUser">
+                Welcome 👋
+            </h2>
+
             <p id="userId"></p>
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <h3>2</h3>
+                    <span>Available Exams</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>0</h3>
+                    <span>Mock Tests</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>0%</h3>
+                    <span>Best Score</span>
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- Heading -->
+        <!-- Main Heading -->
+
         <h1 class="main-heading">
-            MOCK TEST PORTAL
+            MOCK TEST DASHBOARD
         </h1>
 
         <!-- Exam Cards -->
 
         <a href="RRB_NTPC_MOCK_SUBJECT.html" class="exam-card">
-            <i class="fas fa-train"></i>
-            <span>RRB NTPC (UG) 2026</span>
+
+            <div class="exam-left">
+
+                <i class="fas fa-train"></i>
+
+                <div>
+                    <h3>RRB NTPC (UG) 2026</h3>
+                    <p>4 Subjects Available</p>
+                </div>
+
+            </div>
+
             <i class="fas fa-chevron-right"></i>
+
         </a>
+
 
         <a href="GP_MOCK_SUBJECT.html" class="exam-card">
-            <i class="fas fa-landmark"></i>
-            <span>Gram Panchayat 2026</span>
+
+            <div class="exam-left">
+
+                <i class="fas fa-landmark"></i>
+
+                <div>
+                    <h3>Gram Panchayat 2026</h3>
+                    <p>3 Subjects Available</p>
+                </div>
+
+            </div>
+
             <i class="fas fa-chevron-right"></i>
+
         </a>
 
-        <a href="#" class="exam-card">
-            <i class="fas fa-user-shield"></i>
-            <span>WBP Constable</span>
-            <small>Coming Soon</small>
+
+        <a href="#" class="exam-card disabled">
+
+            <div class="exam-left">
+
+                <i class="fas fa-user-shield"></i>
+
+                <div>
+                    <h3>WBP Constable</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+            </div>
+
+            <span class="coming">SOON</span>
+
         </a>
 
-        <a href="#" class="exam-card">
-            <i class="fas fa-medal"></i>
-            <span>SSC GD</span>
-            <small>Coming Soon</small>
+
+        <a href="#" class="exam-card disabled">
+
+            <div class="exam-left">
+
+                <i class="fas fa-medal"></i>
+
+                <div>
+                    <h3>SSC GD</h3>
+                    <p>Coming Soon</p>
+                </div>
+
+            </div>
+
+            <span class="coming">SOON</span>
+
         </a>
 
     </div>
 
+
+    <!-- User Information -->
+
     <script>
+
         const userName = localStorage.getItem("userName");
         const userId = localStorage.getItem("userId");
 
-        const welcomeUser = document.getElementById("welcomeUser");
-
         if (userName) {
-            welcomeUser.innerHTML = `Welcome, ${userName} 👋`;
+            document.getElementById("welcomeUser").innerHTML =
+                `Welcome, ${userName} 👋`;
         }
 
         if (userId) {
             document.getElementById("userId").innerHTML =
-                `User ID : ${userId}`;
+                `🆔 User ID : ${userId}`;
         }
+
     </script>
 
 </body>
