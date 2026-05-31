@@ -1,25 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mock Test - Job Search</title>
-</head>
-<body>
-    
-    <p id="welcomeUser" class="welcome-user"></p>
-    <h1>Mock Test Section</h1>
-    <p>Comming Soon...</p>
 
-    <!-- This is for show user name after heading-->
+    <link rel="stylesheet" href="Mock_Test.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Welcome Box -->
+        <div class="welcome-box">
+            <h3 id="welcomeUser">Welcome 👋</h3>
+            <p id="userId"></p>
+        </div>
+
+        <!-- Heading -->
+        <h1 class="main-heading">
+            MOCK TEST PORTAL
+        </h1>
+
+        <!-- Exam Cards -->
+
+        <a href="RRB_NTPC_MOCK_SUBJECT.html" class="exam-card">
+            <i class="fas fa-train"></i>
+            <span>RRB NTPC (UG) 2026</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <a href="GP_MOCK_SUBJECT.html" class="exam-card">
+            <i class="fas fa-landmark"></i>
+            <span>Gram Panchayat 2026</span>
+            <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <a href="#" class="exam-card">
+            <i class="fas fa-user-shield"></i>
+            <span>WBP Constable</span>
+            <small>Coming Soon</small>
+        </a>
+
+        <a href="#" class="exam-card">
+            <i class="fas fa-medal"></i>
+            <span>SSC GD</span>
+            <small>Coming Soon</small>
+        </a>
+
+    </div>
+
     <script>
         const userName = localStorage.getItem("userName");
+        const userId = localStorage.getItem("userId");
+
         const welcomeUser = document.getElementById("welcomeUser");
 
-        if (userName && welcomeUser) {
-            welcomeUser.innerHTML = `Welcome, <span>${userName}</span> 👋`;
+        if (userName) {
+            welcomeUser.innerHTML = `Welcome, ${userName} 👋`;
+        }
+
+        if (userId) {
+            document.getElementById("userId").innerHTML =
+                `User ID : ${userId}`;
         }
     </script>
 
 </body>
+
 </html>
