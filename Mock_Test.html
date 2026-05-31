@@ -26,6 +26,11 @@
 
             <p id="userId"></p>
 
+            <!-- Logout Button -->
+            <button class="logout-btn" onclick="logoutUser()">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+
             <div class="stats">
 
                 <div class="stat-card">
@@ -145,6 +150,15 @@
             document.getElementById("userId").innerHTML =
                 ` User ID : ${userId}`;
         }
+
+         function logoutUser() {
+
+            localStorage.removeItem("userName");
+            localStorage.removeItem("userId");
+
+            window.location.href = "index.html";
+        }
+
 
     </script>
 
