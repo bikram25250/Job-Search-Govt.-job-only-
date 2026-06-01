@@ -287,7 +287,7 @@ body{
 
 .result-box{
     background:white;
-    max-width:950px;
+    width:100%;
     margin:40px auto;
     padding:35px;
     border-radius:25px;
