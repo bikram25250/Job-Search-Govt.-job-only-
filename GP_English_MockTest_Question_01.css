@@ -80,6 +80,15 @@ body{
     font-size:34px;
 }
 
+.exam-subtitle{
+    text-align:center;
+    color:#cbd5e1;
+    font-size:18px;
+    margin-top:-10px;
+    margin-bottom:25px;
+    font-weight:500;
+}
+
 /* =========================
    MOBILE MENU BUTTON
 ========================= */
