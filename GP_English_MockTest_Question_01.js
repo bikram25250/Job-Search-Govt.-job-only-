@@ -278,6 +278,7 @@ function showResult() {
     <div class="result-box">
 
         <h2>🎉 Test Completed</h2>
+        <p> Gram Panchayat 2026 </p>
 
         <h3>${userName}</h3>
 
