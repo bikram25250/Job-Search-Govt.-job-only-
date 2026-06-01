@@ -278,11 +278,30 @@ function showResult() {
     <div class="result-box">
 
         <h2>🎉 Test Completed</h2>
-        <p> Gram Panchayat 2026 </p>
 
-        <h3>${userName}</h3>
+<div class="result-info">
 
-        <p>User ID : ${userId}</p>
+    <div>
+        <span>Exam</span>
+        <b>Gram Panchayat 2026</b>
+    </div>
+
+    <div>
+        <span>Subject</span>
+        <b>English</b>
+    </div>
+
+    <div>
+        <span>Name</span>
+        <b>${userName}</b>
+    </div>
+
+    <div>
+        <span>User ID</span>
+        <b>${userId}</b>
+    </div>
+
+</div>
 
         <br>
 
