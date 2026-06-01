@@ -411,3 +411,41 @@ body{
     background:#64748b;
     color:white;
 }
+
+/* =========================
+   RESULT INFO TABLE
+========================= */
+
+.result-info{
+    background:#f8fafc;
+    border:1px solid #e2e8f0;
+    border-radius:18px;
+    padding:18px;
+    margin:25px 0;
+}
+
+.result-info div{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:12px 8px;
+
+    border-bottom:1px solid #e5e7eb;
+}
+
+.result-info div:last-child{
+    border-bottom:none;
+}
+
+.result-info span{
+    color:#64748b;
+    font-size:15px;
+    font-weight:600;
+}
+
+.result-info b{
+    color:#0f172a;
+    font-size:16px;
+    font-weight:700;
+}
