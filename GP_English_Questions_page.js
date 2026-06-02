@@ -1,7 +1,7 @@
 const examInfo = {
     exam: "Gram Panchayat 2026",
     subject: "English",
-    time:10
+    time:1
 };
 
 /* =========================
