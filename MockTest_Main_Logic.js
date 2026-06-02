@@ -72,9 +72,13 @@ function loadQuestion() {
     questionNumber.innerHTML =
         `Question ${currentQuestion + 1} of ${questions.length}`;
 
-    questionText.innerHTML =
-        q.question;
+    // questionText.innerHTML =
+    //     q.question;
 
+    questionText.innerHTML = `
+        ${q.question}
+        ${q.image ? `<img src="${q.image}" class="question-img">` : ""}`;
+        
     optionsContainer.innerHTML = "";
 
     q.options.forEach((option, index) => {
