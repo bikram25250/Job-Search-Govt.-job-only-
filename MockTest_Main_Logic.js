@@ -357,9 +357,9 @@ const timerInterval =
 
             clearInterval(timerInterval);
 
-            alert(
-                "⏰ Time Over! Test Submitted Automatically."
-            );
+            // alert(
+            //     "⏰ Time Over! Test Submitted Automatically."
+            // );
 
             showResult();
 
