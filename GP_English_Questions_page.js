@@ -11,8 +11,9 @@ const examInfo = {
 const questions = [
 
     {
-        question: "Choose the synonym of Brave",
-        options: ["Coward", "Courageous", "Weak", "Lazy"],
+        question: "Choose the alternative which is closely resembles the mirror image of the given combination",
+        image:"Reasoning_1.jpeg",
+        options: ["Option A", "Option B", "Option C", "Option D"],
         answer: 1
     },
 
