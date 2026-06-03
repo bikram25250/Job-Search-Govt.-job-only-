@@ -17,11 +17,30 @@
 
 // }
 
+
+
+/* Fill up to 20 Questions */
+
+// while (questions.length < 20) {
+
+//     questions.push({
+//         question: "Sample Question " + (questions.length + 1),
+//         options: [
+//             "Option A",
+//             "Option B",
+//             "Option C",
+//             "Option D"
+//         ],
+//         answer: 0
+//     });
+
+// }
+
 document.getElementById("examTitle").innerText =
-examInfo.subject + " Mock Test - 01";
+    examInfo.subject + " Mock Test";
 
 document.getElementById("examSubTitle").innerText =
-examInfo.exam;
+    examInfo.exam;
 
 /* =========================
    USER INFO
@@ -47,6 +66,37 @@ let currentQuestion = 0;
 
 let answers =
     new Array(questions.length).fill(null);
+
+let examSubmitTime = "";
+
+let serverStartTime;
+let browserStartTime;
+
+async function loadServerTime(){
+
+    try{
+
+        let response = await fetch(
+            "https://timeapi.io/api/Time/current/zone?timeZone=Asia/Kolkata"
+        );
+
+        let data = await response.json();
+
+        serverStartTime =
+            new Date(data.dateTime);
+
+        browserStartTime =
+            Date.now();
+
+    }catch(error){
+
+        serverStartTime = null;
+
+    }
+
+}
+
+loadServerTime();
 
 const questionText =
     document.getElementById("questionText");
@@ -78,7 +128,7 @@ function loadQuestion() {
     questionText.innerHTML = `
         ${q.question}
         ${q.image ? `<img src="${q.image}" class="question-img">` : ""}`;
-        
+
     optionsContainer.innerHTML = "";
 
     q.options.forEach((option, index) => {
@@ -224,7 +274,27 @@ document
 
 function showResult() {
 
-    let correct = 0;
+    if(serverStartTime){
+
+    let passedTime =
+        Date.now() - browserStartTime;
+
+    let finalTime =
+        new Date(
+            serverStartTime.getTime() + passedTime
+        );
+
+    examSubmitTime =
+        finalTime.toLocaleString("en-IN");
+
+}else{
+
+    examSubmitTime =
+        "Server Time Not Available";
+
+}
+
+let correct = 0;
 
     questions.forEach((q, index) => {
 
@@ -261,9 +331,9 @@ function showResult() {
     </div>
 
     <div>
-       <span>Exam Date & Time</span>
-       <b>${new Date().toLocaleString()}</b>
-   </div>
+        <span>Exam Date & Time</span>
+        <b>${examSubmitTime}</b>
+    </div>
 
     <div>
         <span>Subject</span>
@@ -339,7 +409,7 @@ document
    TIMER
 ========================= */
 
-let time = examInfo.time*60;
+let time = examInfo.time * 60;
 
 const timer =
     document.getElementById("timer");
