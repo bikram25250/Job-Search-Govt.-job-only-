@@ -17,25 +17,6 @@
 
 // }
 
-
-
-/* Fill up to 20 Questions */
-
-// while (questions.length < 20) {
-
-//     questions.push({
-//         question: "Sample Question " + (questions.length + 1),
-//         options: [
-//             "Option A",
-//             "Option B",
-//             "Option C",
-//             "Option D"
-//         ],
-//         answer: 0
-//     });
-
-// }
-
 document.getElementById("examTitle").innerText =
     examInfo.subject + " Mock Test";
 
