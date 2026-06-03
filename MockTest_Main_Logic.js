@@ -261,6 +261,11 @@ function showResult() {
     </div>
 
     <div>
+       <span>Exam Date & Time</span>
+       <b>${new Date().toLocaleString()}</b>
+   </div>
+
+    <div>
         <span>Subject</span>
         <b>${examInfo.subject}</b>
     </div>
